@@ -1,20 +1,35 @@
-<nav class="navbar navbar-default">
+<!-- <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
-        <img alt="Brand" src="/logo.png">
+        <%= image_tag 'logo.png', :size => '30x30', :class => 'logo' %>
       </a>
     </div>
   </div>
 </nav>
+-->
+
+<div class="logo-wrapper">
+  <%= image_tag 'logo.png', :size => '60x60', :class => 'logo' %>
+</div>
+
+<div class="article-title col-xs-10 col-xs-offset 1 col-md-8 col-md-offset-2">
+  <p class="fecha">Fecha 9</p>
+  <h1>Talleres vs. Patronato</h1>
+  <h2>Mantuvo el plan del DT Kudelka. Los cambios fueron estratégicos, asomó su poder de gol y la defensa creció.</h2>
+    <br/>
+    <div class="social-icons text-center">
+    <span class="footer-links"><a class="socicon-twitter" id="twitter" href="#"></a><a class="socicon-facebook" id="github" href="#"></a><a class="socicon-whatsapp" id="medium" href="#"></a></span>
+    </div>
 
 
-<h1>Fecha 3: Talleres vs. Patronato</h1>
-  <br/>
-<h2>Mantuvo el plan del DT Kudelka. Los cambios fueron estratégicos, asomó su poder de gol y la defensa creció.</h2>
-  <br/>
-<img src="http://staticmd1.lavozdelinterior.com.ar/sites/default/files/styles/landscape_642_366/public/nota_periodistica/talleres_343.jpg">
-  <br/>
+  <div class="article-image-wrapper">
+   <%= image_tag 'http://staticmd1.lavozdelinterior.com.ar/sites/default/files/styles/landscape_642_366/public/nota_periodistica/talleres_343.jpg', :class => 'article-image' %>
+  </div>
+    <br/>
+    <br/>
+</div>
+<div class="article-body col-xs-10 col-xs-offset 1 col-md-6 col-md-offset-3">
 <p>
 Talleres salió por la forma. Un circuito de juego incompleto, jugadores clave rumbo a su plenitud y la falta de puntería habían situado al equipo de Frank Kudelka cerca de una cornisa futbolera, a poco de iniciar el campeonato. El plan, el de ser protagonista, no se iba a negociar. Pero era necesaria e imperiosa su evolución. Los cambios que propuso el DT solamente fueron estratégicos, al resto lo hicieron los jugadores.
 </p>
@@ -46,10 +61,42 @@ La evolución fue posible porque el técnico volvió a contemplar tiempos y luga
 Le pasó en el Federal A y en la B, pero en Primera División no iba a ser un trámite. Había pocos que tenían experiencia inmediata de Primera. Para ellos necesitó de la confianza de los jugadores (se mantuvo el “juega el que mejor está”) y de su convencimiento respectivo (Reynoso hizo jugar a Talleres). Ni más, ni menos.
 </p>
 
+</div>
+
 <br />
 
-<div class="email-cta">
+<div class="email-cta col-xs-10 col-xs-offset 1 col-md-6 col-md-offset-3 text-center">
   <h4>Queres más analisis como estos?</h4>
-  <p>Y muchas noticias más. Deja tu mail abajo y registrate.</p>
+  <p class="email-cta-text">Y muchas noticias más. Deja tu mail abajo y registrate.</p>
+
+  <form class="newsletter">
+    <input class="box" type="email" value="" placeholder="Empeza por escribir tu email..." />
+    <input class="button-form" type="submit" value="Suscribirme" />
+</form>
+
 </div>
+
+
+
+<script>;( function( $, window, document, undefined )
+{
+    'use strict';
+ 
+    var form        = '.newsletter',
+        className   = 'newsletter--active',
+        email       = 'input[type="email"]';
+ 
+    $( form ).each( function()
+    {
+        var $form   = $( this ),
+            $email  = $form.find( email ),
+            val     = '';
+ 
+        $email.on( 'keyup.addClassWhenEmail', function()
+        {
+            val = $email.val();
+            $form.toggleClass( className, val != '' && /^([\w-\.]+@([\w-]+\.)+[\w-]{2,12})?$/.test( val ) );
+        });
+    });
+})( jQuery, window, document );</script>
 

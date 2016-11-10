@@ -6,3 +6,127 @@ $secondary-font: 'Roboto', sans-serif;
 
 $primary-color: #081b6a;
 $secondary-color: #000;
+
+.navbar-default {
+  border: none;
+  border-radius: 0;
+  background: $primary-color;
+  height: 60px;;
+}
+
+.article-title {
+  margin-top: 30px;
+}
+
+.logo-wrapper {
+  margin-top: 50px;
+}
+
+.logo { 
+  display: block;
+  margin: auto;
+}
+
+.article-image-wrapper {
+  margin-top: 30px;
+}
+
+.article-image {
+  display: block;
+  margin: auto;
+}
+
+h1 { 
+  font-family: $primary-font;
+  font-size: 45px;
+  text-align: center;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: $secondary-font;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+}
+
+.fecha {
+  font-family: $secondary-font;
+  font-size: 14px;
+  text-align: center;
+  color: #e5e5e5;
+}
+
+p {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.email-cta {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+h4 {
+  font-family: $primary-font;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 700;
+  color: $primary-color;
+
+}
+
+.email-cta-text {
+  font-family: $secondary-font;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+}
+
+.footer-links {
+  font-size: 16px;
+}
+
+.footer-links a {
+  padding-right: 20px;
+  font-size: 18px;
+
+  &:hover {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+#twitter {
+  color: #1da1fd;
+}
+
+#github {
+  color: #3b5998;
+}
+
+#medium {
+  color: #4dc247;
+}
+
+
+.newsletter:not( .newsletter--active ) input[type='submit']
+{
+    display: none;
+}
+
+.box {
+  height: 40px;
+  width: 60%;
+}
+
+.button-form {
+  height: 40px;
+  background-color: $primary-color;
+  border: 0px;
+  border-radius: 2px;
+  color: white;
+  font-family: $primary-font; 
+}
