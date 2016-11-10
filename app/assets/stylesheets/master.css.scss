@@ -10,21 +10,17 @@ $secondary-color: #000;
 .navbar-default {
   border: none;
   border-radius: 0;
-  background: $primary-color;
-  height: 60px;;
+  background: white;
+  line-height: 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar-brand {
+  padding: 10px 20px 20px 20px;
 }
 
 .article-title {
   margin-top: 30px;
-}
-
-.logo-wrapper {
-  margin-top: 50px;
-}
-
-.logo { 
-  display: block;
-  margin: auto;
 }
 
 .article-image-wrapper {
@@ -78,6 +74,11 @@ h4 {
 
 }
 
+.email-cta {
+  background-color: #e5e5e5;
+  padding: 30px;
+}
+
 .email-cta-text {
   font-family: $secondary-font;
   font-size: 18px;
@@ -94,8 +95,8 @@ h4 {
   font-size: 18px;
 
   &:hover {
+    font-size: 20px;
     text-decoration: none;
-    color: #000;
   }
 }
 
@@ -120,7 +121,7 @@ h4 {
 .box {
   height: 45px;
   width: 65%;
-  border: 1px solid #9fa3a8;
+  border: 0px solid #9fa3a8;
   color: #9fa3a8;
   padding-left: 10px;
 }
