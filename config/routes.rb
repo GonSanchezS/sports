@@ -1,5 +1,6 @@
 Sports::Application.routes.draw do
   root 'static_pages#index'
+  get 'resumen', to: 'static_pages#resumen'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
