@@ -11,10 +11,26 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag 'favicon.ico' %>
+  <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 </head>
 <body>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -25,6 +41,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#"><%= image_tag 'logo.png', :size => '30x30', :class => 'logo' %></a>
+      <!--<span class="footer-links"><a class="socicon-twitter" id="twitter" href="#"></a><a class="socicon-facebook" id="github" href="#"></a><a class="socicon-whatsapp" id="medium" href="#"></a></span> -->
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,6 +57,7 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
 
 <%= yield %>
 
