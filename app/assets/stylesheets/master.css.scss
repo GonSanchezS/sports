@@ -240,10 +240,16 @@ a.primary-button--landing {
     background-color: $primary-color;
     border: 0px;
   }
-
-  &:active {
-    background-color: $primary-color;
-  }
 }
 
+
+  .ghost-button:active {
+    background-color: $primary-color;
+    border: 0px;
+  }
+
+    .ghost-button:focus {
+    background-color: $primary-color;
+    border: 0px;
+  }
 
