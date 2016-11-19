@@ -59,6 +59,12 @@ h1 {
   font-weight: 700;
 }
 
+h1.header--landing {
+  margin-top: 300px;
+  text-align: left;
+  font-size: 60px;
+}
+
 h2 {
   font-family: $secondary-font;
   font-size: 24px;
@@ -78,6 +84,12 @@ p {
   font-size: 16px;
   line-height: 2;
   margin-bottom: 20px;
+}
+
+p.intro--landing {
+  color: white;
+  font-size: 18px;
+  font-family: $secondary-font;
 }
 
 .email-cta {
@@ -183,6 +195,55 @@ h4 {
     background: url(polina.jpg) no-repeat;
     background-size: cover;
 }
+
+.video-container .overlay:before {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background: #000;
+    opacity: 0.9;
+}
+
 .container h1 {
     color: white;
 }
+
+a.primary-button--landing {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: white;
+    background-color: $primary-color;
+}
+
+.ghost-button {
+  display: inline-block;
+  padding: 14px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  background: none;
+  font-family: $secondary-font;
+  font-size: 15px;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $primary-color;
+    border: 0px;
+  }
+
+  &:active {
+    background-color: $primary-color;
+  }
+}
+
+
